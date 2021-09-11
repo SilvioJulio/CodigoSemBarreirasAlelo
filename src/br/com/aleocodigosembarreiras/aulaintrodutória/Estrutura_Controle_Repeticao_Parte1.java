@@ -1,4 +1,4 @@
-package br.com.alelo.codigo.sem.barreiras;
+package br.com.aleocodigosembarreiras.aulaintrodutória;
 
 import java.util.Scanner;
 
@@ -58,8 +58,8 @@ public class Estrutura_Controle_Repeticao_Parte1 {
     public void Exercicio2_Parte2(){
         // Estrutura de repetição que calcule o fatorial de um número.
 
-            int fatorial = 1;
-            int numero = 9;
+            var fatorial = 1;
+            var numero = 9;
             for (int i = 1; i <= numero; i++) {
                 fatorial = fatorial * i;
 

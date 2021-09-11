@@ -1,4 +1,4 @@
-package br.com.alelo.codigo.sem.barreiras;
+package br.com.aleocodigosembarreiras.aulaintrodutória;
 
 import java.util.Scanner;
 
@@ -212,10 +212,10 @@ public class Estruturas_Controle_Decisão_Parte1 {
     public void Exercicio6_Parte1(){
 
         System.out.println(" Jogador 1 - Digite 0 para PEDRA, 1 para PAPEL ou 2 para TESOURA: ");
-        int jogador1 = tc.nextInt();
+        var jogador1 = tc.nextInt();
 
         System.out.println("Jogador 2 - Digite 0 para PEDRA, 1 para PAPEL ou 2 para TESOURA: ");
-        int jogador2 = tc.nextInt();
+        var jogador2 = tc.nextInt();
 
         if (jogador1 == jogador2)
             System.out.println("Empate");

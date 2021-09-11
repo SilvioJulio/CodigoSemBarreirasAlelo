@@ -1,4 +1,4 @@
-package br.com.codigosembarreirasalelo;
+package br.com.aleocodigosembarreiras.aulaintrodutória;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ class Logica_Parte1 {
 
        Logica_Parte1 teste = new Logica_Parte1();
         // Menu para usuário escolher opção do exercício ao qual quer  startar
-        int opcao;
+        var opcao = 0;
         System.out.println("Quais  exercício deseja executar:");
         System.out.println("Para Exercício1   digite => 1 :");
         System.out.println("Para Exercício2   digite => 2 :");
@@ -52,9 +52,9 @@ class Logica_Parte1 {
          *
          */
         //Problema 1 do execício aula2 resolvido
-        int y = 99;
-        int z = 11;
-        int aux =0;
+        var y = 99;
+        var z = 11;
+        var aux =0;
 
         // Processo da troca dos valors das  variávies
         aux = y;
@@ -69,7 +69,7 @@ class Logica_Parte1 {
     public void Exercicio2 (){
 
         System.out.println("Informe um numero:");
-        int n = tc.nextInt();
+        var n = tc.nextInt();
         System.out.println("O antecessor de "+ n + " é:");
         System.out.println(n-1);
 
