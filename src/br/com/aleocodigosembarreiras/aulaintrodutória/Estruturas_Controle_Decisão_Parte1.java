@@ -168,14 +168,17 @@ public class Estruturas_Controle_Decisão_Parte1 {
     public void Exercicio5_Parte1(){
 
 
-        int PrimeiroNumero ;
-        int SegundoNumero ;
-        int opcao ;
-        int subritacao = 0, divisao = 0, adicao=0,multiplicacao;
+        var PrimeiroNumero =0 ;
+        var SegundoNumero = 0 ;
+        var opcao=0 ;
+        var subritacao = 0;
+        var divisao = 0;
+        var adicao=0;
+        var multiplicacao=0;
 
         System.out.println("1- Prescione para adição :");
-        System.out.println("2- Prescione para multiplicação :");
-        System.out.println("3- Prescione para divisão :");
+        System.out.println("2- Prescione para divisão :");
+        System.out.println("3- Prescione para multiplicação :");
         System.out.println("4- Prescione para subritação:");
         opcao = tc.nextInt();
 
@@ -183,9 +186,7 @@ public class Estruturas_Controle_Decisão_Parte1 {
         PrimeiroNumero = tc.nextInt();
         System.out.println("Informe o primeiro númeor");
         SegundoNumero = tc.nextInt();
-        if (divisao==0) {
-            System.out.println("0 não pode ser dividio, favor digitar número válido");
-        }
+
 
         switch (opcao) {
             case 1: {
@@ -194,14 +195,20 @@ public class Estruturas_Controle_Decisão_Parte1 {
                 break;
             }
             case 2: {
-
+                if (divisao==0) {
+                    System.out.println("0 não pode ser dividio, favor digitar número válido");
+                }
                 divisao = PrimeiroNumero / SegundoNumero;
                 System.out.println("Resultado da divisão: " + divisao);
                 break;
             }
             case 3 : {
                 multiplicacao = PrimeiroNumero * SegundoNumero;
-                System.out.println("Resultado da mutiplicação" + multiplicacao);
+                System.out.println("Resultado da mutiplicação:" + multiplicacao);
+                break;
+            }case 4 : {
+                subritacao= PrimeiroNumero - SegundoNumero;
+                System.out.println("Resultado da mutiplicação:" + subritacao);
                 break;
             }
             default:
